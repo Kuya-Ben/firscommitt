@@ -1,0 +1,13 @@
+# Smart Face Attendance Monitoring System - dependencies
+# Recommended: Python 3.9 - 3.11   (pip install -r requirements.txt)
+
+opencv-python>=4.8.0       # Haar Cascade, webcam, image operations, drawing
+numpy>=1.24.0              # array maths
+pandas>=2.0.0              # reading / checking Attendance.csv
+dlib>=19.24                # deep-learning backend of face_recognition (needs CMake + C++ compiler)
+face_recognition>=1.3.0    # 128-d face encodings and face distance
+face_recognition_models    # pre-trained dlib models used by face_recognition
+setuptools<81              # face_recognition_models still needs pkg_resources
+Pillow>=9.0.0              # image support used by face_recognition
+
+# Built into Python (no install needed): os, csv, datetime, time, pickle, argparse
